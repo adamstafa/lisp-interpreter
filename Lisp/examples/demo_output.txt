@@ -1,0 +1,23 @@
+﻿123
+asdf
+#t
+()
+=== Function calling ===
+579
+1+1 is greater than 3-2
+21
+0
+=== Lists ===
+(1 2 3)
+(1 (#f ((115 116 114))))
+=== eval function ===
+      my-expression : (+ my-variable 420 ((if #f * +) 666 0))
+(eval my-expression): 1155
+=== User defined functions ===
+120
+2
+=== List processing ===
+7
+(1 2 3 4 5 6 7 8 9)
+(2 4 6 8 10 12 14)
+(2 4 6)
