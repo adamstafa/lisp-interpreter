@@ -1,5 +1,20 @@
 ﻿# LISP interpreter in C#
 
+Interpreter of a custom purely functional LISP dialect written in C#.
+
+## Features
+- Primitive data types: `number`, `string`, `symbol`, `bool`, `nil`
+- Arithmetic and comparison functions
+- Lists and the `cons`, `nil`, `car`, `cdr` functions
+- Conditionals special forms `if`, `cond`, `and`, `or`
+- `eval` special form and `apply` function
+- Higher order functions such as `map` and `filter`
+- User-defined functions and `lambda` functions supporting recursion
+- `let` blocks for local bindings
+- `print` functions for output
+- Modules imported using the `require` keyword
+- Standard library for convenient manipulation with lists written directly in the language
+
 ## Build
 
 Install .NET (`sudo apt-get install dotnet-sdk-8.0`).
@@ -25,7 +40,7 @@ cd Lisp/bin/Debug/net8.0
 
 See https://youtu.be/95JR6VJh8ho
 
-## Features
+## Example program
 ```lisp
 ﻿; Primitive data types: numbers, strings, bools, nil
 (print-ln "=== Primitive data types ===")
@@ -48,7 +63,7 @@ See https://youtu.be/95JR6VJh8ho
 (print-object-ln (list 1 2 3))
 (print-object-ln (list 1 (list #f (list "str"))))
 
-; Create an expression fromi primitve data types and evaluate it
+; Create an expression from primitive data types and evaluate it
 (print-ln "=== eval function ===")
 (define my-variable 69)
 (define expression-condition (> 0 1))
